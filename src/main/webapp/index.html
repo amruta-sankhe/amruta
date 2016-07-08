@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>simple calculator</title>
+  <h2>
+    
+    amruta </h2>
+  
+</head>
+<body>
+ <script> 
+   function add(){
+   var n1=document.getElementById("num1").value;
+   var n2=document.getElementById("num2").value;
+   var sum=+n1 + +n2;
+   alert(sum);
+     document.getElementByID("result").innerText=sum;
+   }
+  </script> 
+<form>
+  
+  enter number 1: <input type="number"  id="num1" required>
+  enter number 2: <input type="number"  id="num2" required>
+  <INPUT TYPE="button" value="add" onclick="add();">
+    <div id="result">
+      
+    </div>
+  </form>
+</body>
+</html>
